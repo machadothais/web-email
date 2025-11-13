@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leitor Inteligente de E-mails</title>
+</head>
+<body>
+  <header>
+    <h1>Leitor Inteligente de E-mails</h1>
+    <p>Classificação automática e sugestão de respostas com IA</p>
+  </header>
+
+  <main>
+    <!-- Formulário de Upload -->
+    <section class="upload-section">
+      <h2>Enviar e-mail para análise</h2>
+      <form id="emailForm">
+        <label for="emailFile">Escolha um arquivo (.txt ou .pdf)</label>
+        <input type="file" id="emailFile" accept=".txt, .pdf" />
+
+        <p>ou</p>
+
+        <label for="emailText">Cole o conteúdo do e-mail</label>
+        <textarea id="emailText" placeholder="Digite ou cole aqui o conteúdo do e-mail..."></textarea>
+
+        <button type="submit" id="analyzeBtn">Analisar com IA</button>
+      </form>
+    </section>
+
+    <!-- Exibição dos resultados -->
+    <section id="resultSection" class="result-section hidden">
+      <h2>Resultado da Análise</h2>
+      <div class="result-card">
+        <p><strong>Categoria:</strong> <span id="category"></span></p>
+        <p><strong>Resposta sugerida:</strong></p>
+        <pre id="autoReply"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong>Thais Cristiane Machado</strong> 💡</p>
+  </footer>
+
+</body>
+</html>
